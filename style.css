@@ -150,7 +150,7 @@ nav li:hover{
 }
 .title_history{
     margin: 150px 0;
-    font-size: 2.5vw;
+    font-size: 35px;
     font-family: "Reggae One", system-ui;
     text-shadow: 2px 2px 4px rgba(141, 141, 141, 0.5);
 }
@@ -242,10 +242,11 @@ nav li:hover{
     margin: 0 auto;
 }
 .title-perso{
-    font-size: 2.5vw;
+    color: #eaeaea;
+    font-size: 35px;
     font-family: "Reggae One", system-ui;
     text-shadow: 2px 2px 4px rgba(141, 141, 141, 0.5);
-    margin: 100px 0;
+    margin: 150px 0;
 }
 
 /* PARTIE CONTAINER PERSO */
@@ -382,4 +383,121 @@ nav li:hover{
 .class-height2{
     height: 960px;
     max-width: 600px;
+}
+
+            /* PARTIE MANGA JUJUTSU KAISEN */
+
+.container-manga{
+    width: 90%;
+    height: auto;
+    margin: 200px auto;
+}
+.title-manga{
+    color: #eaeaea;
+    font-size: 35px;
+    font-family: "Reggae One", system-ui;
+    text-shadow: 2px 2px 4px rgba(141, 141, 141, 0.5);
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+}
+.img-tomejjk{
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 50px 50px 0;
+    border-radius: 25px;
+    box-shadow: 10px 15px 30px rgb(255, 255, 255);
+}
+.hero-title_trait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-manga_in_manga{
+    color: #eaeaea;
+    font-size: 25px;
+    font-family: "Reggae One", system-ui;
+    text-shadow: 2px 2px 4px rgba(141, 141, 141, 0.5);
+    margin: 0 0 20px 0 ;
+    display: flex;
+    justify-content: center;
+}
+.trait-manga{
+    width: 50%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #7A7A7A;
+    margin-bottom: 80px;
+    box-shadow: 5px 4px 2px #585858;
+}
+.paragraf_part_manga{
+    color: whitesmoke;
+    font-family:  "Reggae One", system-ui;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.txt_important_manga{
+    color: #969696;
+    font-size: 22px;
+    padding-right: 40px;
+}
+.fin{
+    margin-top: 120px;
+}
+
+            /* PARTIE DE LOTEUR GEGE AKUTAMI */
+
+.container-Gege_akutami{
+    width: 95%;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title-auteur{
+    color: #eaeaea;
+    font-size: 35px;
+    font-family: "Reggae One", system-ui;
+    text-shadow: 2px 2px 4px rgba(141, 141, 141, 0.5);
+    margin: 50px 0 200px 0;
+    display: flex;
+    justify-content: center; 
+}
+.images-mangas-gege{
+    width: 85%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 150px;
+}
+.txt-presentation-auteur{
+    color: #eaeaea;
+    font-size: 18px;
+    font-family: "Reggae One", system-ui;
+    line-height: 1.8;
+}
+
+            /* PIED DE PAGE DU SITE JJK */
+
+
+footer{
+    background-color: black;
+}
+.primerapart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-JJK{
+    width: 200px;
+}
+.trait1{
+    width: 40%;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #7A7A7A;
+    margin-bottom: 50px;
 }

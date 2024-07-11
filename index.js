@@ -4,9 +4,6 @@
 
 
 
-
-
-
 // PART  HISTORY
 
 let arc1 = document.querySelector(".arc1")
