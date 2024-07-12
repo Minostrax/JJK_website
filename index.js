@@ -1,8 +1,14 @@
 // PART NAV-BAR
 
+let MenuHamburger = document.getElementById("menu-icon")
+let barres = document.querySelectorAll(".barre")
 
 
-
+MenuHamburger.addEventListener("click", () => {
+    barres.forEach(barre => {
+        barre.classList.toggle("barre-animation");
+    });
+})
 
 // PART  HISTORY
 
