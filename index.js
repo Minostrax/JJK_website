@@ -1,16 +1,47 @@
-// PART NAV-BAR
+                        // NAVBAR HEADER
 
-let MenuHamburger = document.getElementById("menu-icon")
-let barres = document.querySelectorAll(".barre")
+                // PART MENU ANIMATION
 
+    // let MenuHamburger = document.getElementById("menu-icon")
+    // let barres = document.querySelectorAll(".barre")
+    // let navBar = document.querySelector(".nav-bar")
 
-MenuHamburger.addEventListener("click", () => {
-    barres.forEach(barre => {
-        barre.classList.toggle("barre-animation");
+    // MenuHamburger.addEventListener("click", () => {
+    //     barres.forEach(barre => {
+    //         barre.classList.toggle("barre-animation");
+    //     });
+    //     navBar.classList.toggle("class-navbar");
+    //     console.log("navBar classes:", navBar.classList);
+    // })
+    document.addEventListener("DOMContentLoaded", () => {
+        let MenuHamburger = document.getElementById("menu-icon");
+        let barres = document.querySelectorAll(".barre");
+        let navBar = document.querySelector(".nav-bar");
+    
+        if (!MenuHamburger || !navBar || barres.length === 0) {
+            console.error("MenuHamburger, navBar, or barres not found");
+            return;
+        }
+    
+        MenuHamburger.addEventListener("click", () => {
+            console.log("Menu clicked");
+            barres.forEach(barre => {
+                barre.classList.toggle("barre-animation");
+            });
+            navBar.classList.toggle("class-navbar");
+            console.log("navBar classes:", navBar.classList);
+        });
     });
-})
 
-// PART  HISTORY
+                // NAV BAR DEROULANTE
+
+
+
+
+
+
+
+    // PART  HISTORY
 
 let arc1 = document.querySelector(".arc1")
 let arc2 = document.querySelector(".arc2")
