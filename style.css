@@ -43,6 +43,20 @@ header{
     width: 90%;
 }
 
+#raccourci-contact{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.8s ease;
+}
+#raccourci-contact:hover{
+    opacity: 0.75;
+}
+.lien46{
+    display: none;
+}
 .img_logo{
     width: 90px;
     height: 75px;
@@ -104,14 +118,13 @@ nav li:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
-    height: 100vh;
     overflow-x: hidden;
 }
 .img-title{
-    width: calc(100vw - 55vw);
+    width: 90%;
 }
 .img-gojo{
-    width: calc(100vw - 50vw);
+    width: 100%;
     object-fit: cover;
     height: 90vh;
 }
@@ -131,8 +144,10 @@ nav li:hover{
     width: 80%;
 }
 .btn-container{
+    width: 100%;
     padding-top: 50px;
     display: flex;
+    justify-content: center;
     gap: 100px;
     flex-flow: row nowrap;
 }
@@ -570,3 +585,34 @@ footer{
 
 
                 /* RESPONSIVE */
+
+
+
+@media (max-width: 950px) {
+    .container-hero2{
+        gap: 20px;
+    }
+    .nav-bar{
+        gap: 20px;
+    }
+    .btn-container{
+        gap: 50px;
+    }
+    .txt-carrousel{
+        line-height: 1.2;
+        font-size: 18px;
+    }
+    .item{
+        border: none;
+    }
+    .txt-introduction {
+        width: 90%;
+    }
+    .carrousel-images{
+        gap: 10px;
+    }
+    .images-mangas-gege{
+        width: 90%;
+        height: 550px;
+    }
+}
