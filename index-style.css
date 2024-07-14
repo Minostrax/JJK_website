@@ -3,8 +3,126 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
+    border: none;
 }
 body{
     background: url("./Images/fnd-pagecontact.jpg") no-repeat right/cover;
     height: 100vh;
+}
+.img_logo{
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.9s ease;
+    transform: scale(1);
+    margin-bottom: 10vh;
+    margin-left: 50px;
+}
+.img_logo:hover{
+    opacity: 0.75;
+    transform: scale(0.95);
+
+}
+.container{
+    width: 40%;
+    min-width: 600px;
+    height: 600px;
+    background-color: #171717b9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    border-radius: 30px;
+    box-shadow: 5px 3px 20px #5e5e5ea2;
+}
+.titre{
+    color: #eaeaea;
+    font-family: "Reggae One", system-ui;
+    margin: 20px 0;
+    font-size: 28px;
+    text-align: center;
+}
+.sous-titre{
+    font-family: "Ga Maamli", sans-serif;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.formulaire{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20PX;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20PX;
+    margin: 0 auto;
+    width: 100%;
+}
+.areas{
+    width: 100%;
+    height: 35px;
+}
+.area{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+        /* CONFIG INPUT Y TEXTEAREA */
+
+.text{
+    background-color: #171717;
+    border-radius: 10px;
+}
+.text::placeholder{
+    color: #eaeaea;
+    font-family: "Reggae One", sans-serif;
+    font-size: 14px;
+}
+input,
+textarea{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #eee;
+    font-family:  "Rubik", sans-serif;
+}
+.btn{
+    background-color: black;
+    color: #eee;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #303030;
+}
+
+        /* RESPONSIVE */
+
+@media (max-width:750px) {
+    .container{
+        margin: 0 auto;
+        width: 90%;
+        min-width: auto;
+    }
+}
+@media (max-width:650px) {
+    .row{
+        flex-direction: column;
+    }
+}
+@media (max-width:400px) {
+    .titre{
+        font-size: 24px;
+    }
+    .sous-titre{
+        font-size: 13px;
+    }
 }
