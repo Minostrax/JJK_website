@@ -19,8 +19,27 @@
         }
     });
     
+    // SCROOL ANIMATION
 
+    let scrollVerif = document.documentElement.scrollTop;
 
+    document.addEventListener("scroll", () => {
+        scrollAnimationHeader();
+    });
+
+    function scrollAnimationHeader() {
+        const header = document.querySelector("header");
+        const scrollVerifFunction = document.documentElement.scrollTop;
+        header.style.transition = "0.6s ease"
+        if (scrollVerifFunction > scrollVerif) {
+            header.style.transform = "translateY(-100%)";
+        } else {
+            header.style.transform = "translateY(0%)";
+        }
+
+        // Update scrollVerif after the comparison
+        scrollVerif = scrollVerifFunction;
+    }
 
 
 
@@ -88,3 +107,4 @@ fleche3.addEventListener("click", () => {
     thirdcontainer.classList.toggle("class-height2");
     thirdcontainer.style.transition = " 0.8s ease";
 })
+
